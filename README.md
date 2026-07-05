@@ -24,3 +24,11 @@ Only the public anon key belongs in browser configuration. Never expose the serv
 ## Deployment
 
 Import the repository in Vercel and add the same two environment variables. The included proxy protects application routes whenever Supabase is configured.
+
+## Git sync
+
+This repository includes a local post-commit hook that pushes commits made on `main` to `origin`. Enable it after cloning with:
+
+```bash
+git config core.hooksPath .githooks
+```
